@@ -1,0 +1,13 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9          # for UploadFile / Form
+pydantic>=2.8.0,<3.0.0
+requests>=2.32.0
+redis>=5.0.0
+pyttsx3>=2.90                    # text-to-speech
+spacy>=3.7.0
+pdfplumber>=0.11.0
+python-docx>=1.1.0
+openai-whisper>=20231117         # or just whisper (depending on your install method)
+# torch is usually installed automatically by whisper, but sometimes you need:
+# torch>=2.0.0                   # uncomment only if needed
