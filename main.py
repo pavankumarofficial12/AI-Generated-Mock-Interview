@@ -174,7 +174,7 @@ def get_token(credentials: HTTPAuthorizationCredentials = Depends(security)):
     return credentials.credentials 
  
 # --- Configurable Constants --- 
-MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY", "m7Y1IcXb9ujFjmt97NVGQk9ZnrmbKA7h") 
+MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY") 
 BASE_URL = os.getenv("BASE_URL", "http://localhost:8080") 
 MISTRAL_API_URL = "https://api.mistral.ai/v1/chat/completions" 
 DIFFICULTY_THRESHOLDS = { 
